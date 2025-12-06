@@ -1,37 +1,100 @@
-# Конфигурация зависимостей плагинов
-
-dependencies:
-  soft-depend:
-    - Vault
-    - PlaceholderAPI
-    - DiscordSRV
-    - WorldEdit
-    - WorldGuard
-    - GriefPrevention
-    - LuckPerms
-    - EssentialsX
-    - CoreProtect
-  
-  load-before:
-    - ViaVersion
-    - ViaBackwards
-  
-  required-plugins:
-    - Vault
-    - PlaceholderAPI
-
-# Настройки версий
-versions:
-  minecraft: "1.21.8"
-  java: "21"
-  paper: "1.21.8"
-  purpur: "1.21.8"
-
-# Автообновление
-auto-update:
-  enabled: false
-  check-interval: 24h
-  plugins-to-update:
-    - AbilkaLand-Core
-    - EssentialsX
-    - LuckPerms
+plugins:
+  # Основные
+  - name: "Purpur"
+    version: "1.21.4"
+    source: "https://purpurmc.org"
+    
+  # Обязательные для AbilkaLand-Core
+  - name: "Vault"
+    version: "1.7.3"
+    source: "https://www.spigotmc.org/resources/vault.34315/"
+    
+  - name: "PlaceholderAPI"
+    version: "2.11.6"
+    source: "https://www.spigotmc.org/resources/placeholderapi.6245/"
+    
+  # Модерация
+  - name: "LuckPerms"
+    version: "5.4.127"
+    source: "https://luckperms.net/"
+    
+  - name: "CoreProtect"
+    version: "23.3"
+    source: "https://www.coreprotect.net/"
+    
+  - name: "AdvancedBan"
+    version: "3.2.1"
+    source: "https://www.spigotmc.org/resources/advancedban.8695/"
+    
+  - name: "Vulcan"
+    version: "2.9.7"
+    source: "https://www.spigotmc.org/resources/vulcan-advanced-anticheat.83651/"
+    
+  # Утилиты
+  - name: "EssentialsX"
+    version: "2.20.1"
+    source: "https://essentialsx.net/"
+    
+  - name: "WorldEdit"
+    version: "7.2.19"
+    source: "https://enginehub.org/worldedit/"
+    
+  - name: "WorldGuard"
+    version: "7.0.9"
+    source: "https://enginehub.org/worldguard/"
+    
+  - name: "GriefPrevention"
+    version: "16.18.2"
+    source: "https://www.spigotmc.org/resources/griefprevention.1884/"
+    
+  # Производительность
+  - name: "Spark"
+    version: "1.10.56"
+    source: "https://spark.lucko.me/"
+    
+  - name: "Chunky"
+    version: "1.3.134"
+    source: "https://www.spigotmc.org/resources/chunky.81534/"
+    
+  - name: "ClearLag"
+    version: "3.2.4"
+    source: "https://www.spigotmc.org/resources/clearlag.6823/"
+    
+  # Комфорт
+  - name: "Graves"
+    version: "3.3"
+    source: "https://www.spigotmc.org/resources/graves.74208/"
+    
+  - name: "GSit"
+    version: "1.4.10"
+    source: "https://www.spigotmc.org/resources/g sit.19325/"
+    
+  - name: "BetterSleeping"
+    version: "4.0.4"
+    source: "https://www.spigotmc.org/resources/bettersleeping.60837/"
+    
+  - name: "FastLeafDecay"
+    version: "2.0.1"
+    source: "https://www.spigotmc.org/resources/ fastleafdecay.60266/"
+    
+  # Связь
+  - name: "DiscordSRV"
+    version: "1.28.0"
+    source: "https://www.spigotmc.org/resources/discordsrv.18494/"
+    
+  - name: "SimpleVoiceChat"
+    version: "2.5.12"
+    source: "https://www.spigotmc.org/resources/simple-voice-chat.93738/"
+    
+  # Совместимость
+  - name: "ViaVersion"
+    version: "5.0.1"
+    source: "https://www.spigotmc.org/resources/viaversion.19254/"
+    
+  - name: "ViaBackwards"
+    version: "5.0.1"
+    source: "https://www.spigotmc.org/resources/viabackwards.27448/"
+    
+  - name: "ProtocolLib"
+    version: "5.1.0"
+    source: "https://www.spigotmc.org/resources/protocollib.1997/"
