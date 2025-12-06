@@ -1,0 +1,82 @@
+# AbilkaLand Core Configuration
+settings:
+  # Основные настройки
+  clan-name: "AbilkaLand"
+  clan-tag: "&6[Abilka]"
+  clan-motd: "Добро пожаловать в наш уютный клан!"
+  
+  # Автонастройка плагинов
+  auto-configure:
+    enabled: true
+    plugins:
+      essentials:
+        nickname-prefix: "&6[Abilka] "
+        teleport-cooldown: 5
+      
+      luckperms:
+        default-group: "member"
+        inherit:
+          - "default"
+      
+      worldguard:
+        auto-claim-on-join: true
+        claim-size: 32
+      
+      griefprevention:
+        claim-blocks-on-join: 100
+        minimum-claim-size: 10
+
+# Система "Молочко"
+milk-economy:
+  enabled: true
+  currency-name: "&6Молочко"
+  currency-symbol: "🥛"
+  starting-balance: 50
+  
+  earn-rules:
+    hourly-play: 10
+    daily-login: 25
+    mob-kill: 2
+    mining-diamond: 15
+    helping-new-player: 30
+    clan-event: 50
+    
+  # Интеграция с плагинами
+  integrations:
+    placeholderapi: true
+    vault: true
+    discord: true
+
+# Автоматические настройки для других плагинов
+plugin-tweaks:
+  graves:
+    enabled: true
+    retrieve-cost: 5
+    expire-time: 24h
+    
+  gsit:
+    enabled: true
+    auto-sit-pets: true
+    
+  bettersleeping:
+    enabled: true
+    percentage-needed: 30
+    speed-multiplier: 3
+    
+  simplediscord:
+    webhook-url: "YOUR_WEBHOOK"
+    embed-color: "#FF9900"
+
+# Интеграция с Discord
+discord:
+  enabled: true
+  sync-roles: true
+  announcement-channel: "server-chat"
+  milk-transactions-channel: "milk-log"
+  
+  # Роли Discord <-> Группы в игре
+  role-mapping:
+    admin: "Admin"
+    moderator: "Mod"
+    member: "Member"
+    newbie: "New"
