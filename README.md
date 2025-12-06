@@ -13,7 +13,7 @@
 
 ## 🚀 Установка
 
-1. Скачайте последнюю версию из [Releases](https://github.com/AbilkaLand/AbilkaLand-Core/releases)
+1. Скачайте последнюю версию из [Releases](https://github.com/gordey9992/AbilkaLand-Core/releases)
 2. Поместите `AbilkaLand-Core.jar` в папку `plugins/`
 3. Перезапустите сервер
 4. Настройте конфигурацию в `plugins/AbilkaLand-Core/`
@@ -51,8 +51,8 @@
 ## 👥 Разработчики
 
 - **DeepSeek** - Главный разработчик
-- **gordey25690** - Основатель клана
-- **PCshelly** - Казначей и тестировщик
+- **gordey25690** - Помощник разработчика
+- **PCshelly** - Основатель клана, Казначей и тестировщик
 
 ## 📄 Лицензия
 
