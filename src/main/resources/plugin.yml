@@ -1,0 +1,30 @@
+name: AbilkaLand-Core
+version: 1.0.0
+main: com.abilkaland.core.AbilkaLandCore
+api-version: '1.21'
+authors: [DeepSeek, gordey25690, PCshelly]
+description: Центральное ядро сервера AbilkaLand
+website: https://github.com/gordey9992/AbilkaLand-Core
+
+commands:
+  abilka:
+    description: Основная команда AbilkaLand
+    aliases: [al, clan]
+    permission: abilkaland.use
+  
+  milk:
+    description: Управление молочком
+    aliases: [молоко, валюта]
+    permission: abilkaland.milk
+
+permissions:
+  abilkaland.*:
+    description: Все разрешения AbilkaLand
+    children:
+      abilkaland.use: true
+      abilkaland.admin: true
+      abilkaland.milk: true
+  
+  abilkaland.admin:
+    description: Админские права
+    default: op
