@@ -1,0 +1,37 @@
+# Конфигурация зависимостей плагинов
+
+dependencies:
+  soft-depend:
+    - Vault
+    - PlaceholderAPI
+    - DiscordSRV
+    - WorldEdit
+    - WorldGuard
+    - GriefPrevention
+    - LuckPerms
+    - EssentialsX
+    - CoreProtect
+  
+  load-before:
+    - ViaVersion
+    - ViaBackwards
+  
+  required-plugins:
+    - Vault
+    - PlaceholderAPI
+
+# Настройки версий
+versions:
+  minecraft: "1.21.8"
+  java: "21"
+  paper: "1.21.8"
+  purpur: "1.21.8"
+
+# Автообновление
+auto-update:
+  enabled: false
+  check-interval: 24h
+  plugins-to-update:
+    - AbilkaLand-Core
+    - EssentialsX
+    - LuckPerms
