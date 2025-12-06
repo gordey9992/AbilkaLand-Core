@@ -4,27 +4,50 @@ main: com.abilkaland.core.AbilkaLandCore
 api-version: '1.21'
 authors: [DeepSeek, gordey25690, PCshelly]
 description: Центральное ядро сервера AbilkaLand
-website: https://github.com/gordey9992/AbilkaLand-Core
+website: https://github.com/AbilkaLand/AbilkaLand-Core
+load: POSTWORLD
+
+folia-supported: true
+loadbefore: [ViaVersion, ViaBackwards]
+depend: [Vault, PlaceholderAPI]
+softdepend: [Essentials, LuckPerms, WorldEdit, WorldGuard, GriefPrevention, DiscordSRV, ProtocolLib]
 
 commands:
   abilka:
     description: Основная команда AbilkaLand
     aliases: [al, clan]
     permission: abilkaland.use
+    usage: /<command> [info|members|help|reload]
   
   milk:
     description: Управление молочком
     aliases: [молоко, валюта]
     permission: abilkaland.milk
+    usage: /<command> [shop|pay|top]
 
 permissions:
   abilkaland.*:
     description: Все разрешения AbilkaLand
+    default: op
     children:
       abilkaland.use: true
       abilkaland.admin: true
       abilkaland.milk: true
   
+  abilkaland.use:
+    description: Основные права плагина
+    default: true
+  
   abilkaland.admin:
     description: Админские права
     default: op
+  
+  abilkaland.milk:
+    description: Права на использование валюты
+    default: true
+  
+  abilkaland.milk.admin:
+    description: Админские права для валюты
+    default: op
+    children:
+      abilkaland.milk: true
