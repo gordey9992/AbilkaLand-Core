@@ -1,0 +1,53 @@
+# Молочный Магазин AbilkaLand
+shop:
+  categories:
+    resources:
+      name: "&6📦 Ресурсы"
+      items:
+        diamond-pack:
+          name: "&bНабор алмазов"
+          description: "&764 алмаза для крафта"
+          price: 100
+          commands:
+            - "give {player} diamond 64"
+            
+        enchanted-book:
+          name: "&dЗачарованная книга"
+          description: "&7Книга с Sharpness V"
+          price: 250
+          commands:
+            - "give {player} enchanted_book{StoredEnchantments:[{id:sharpness,lvl:5}]} 1"
+            
+    cosmetics:
+      name: "&d✨ Косметика"
+      items:
+        pet-cat:
+          name: "&fДомашний котик"
+          description: "&7Персональный пушистый друг"
+          price: 500
+          commands:
+            - "spawn cat ~ ~ ~ {Owner:{player},CatType:tabby,CustomName:'\"&6Котик {player}\"'}"
+
+        particle-trail:
+          name: "&bСлед из частиц"
+          description: "&7Оставляй след из сердечек"
+          price: 300
+          permissions:
+            - "abilkaland.particles.heart"
+            
+    clan-perks:
+      name: "&a⚔️ Привилегии клана"
+      items:
+        rename-claim:
+          name: "&eПереименовать участок"
+          description: "&7Дать имя своему домику"
+          price: 150
+          commands:
+            - "abl claim rename {player} {input}"
+            
+        event-vote:
+          name: "&6Голос за ивент"
+          description: "&7Выбрать следующее клановое событие"
+          price: 200
+          commands:
+            - "abl event vote {player}"
