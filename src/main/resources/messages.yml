@@ -1,0 +1,29 @@
+# Сообщения AbilkaLand
+prefix: "&8[&6AbilkaLand&8] &7"
+
+welcome:
+  title: "&6AbilkaLand"
+  subtitle: "&7Добро пожаловать на сервер!"
+  join: "{prefix}&fПривет, &6{player}&f! Пушистый комочек с кактуса слетел, и ты к нам попал!"
+  first-join: "{prefix}&fТы новый котик в нашем логове! Получил &6{amount} Молочка &fна первую миску!"
+  
+clan:
+  motd: "&8&m--------------------------------\n&6&lAbilkaLand\n&7{clan_motd}\n&8&m--------------------------------"
+  members-online: "&7Онлайн клана: &6{online}&7/&6{total}"
+  event-start: "&6⚔️ Начинается клановое событие: &f{event}"
+  
+milk:
+  balance: "&7Твой баланс: &6{balance} 🥛"
+  earned: "&7+&6{amount} Молочка &7за: &f{reason}"
+  spent: "&7-&6{amount} Молочка &7на: &f{item}"
+  not-enough: "&cНедостаточно Молочка! Нужно: &6{amount}"
+  
+shop:
+  title: "&8&m--[ &6🥛 Молочный Магазин &8&m]--"
+  item-format: "&7{name} &8- &6{price}🥛\n&8➥ &7{description}"
+  purchased: "&7Вы купили &6{item} &7за &6{price} Молочка"
+  
+errors:
+  no-permission: "&cТебе нужно быть котом повыше рангом!"
+  player-offline: "&cИгрок оффлайн!"
+  feature-disabled: "&cЭта функция отключена!"
